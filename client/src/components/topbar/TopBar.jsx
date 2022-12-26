@@ -48,7 +48,7 @@ export default function TopBar() {
       <div className="topRight">
         {user ? (
           <Link to="/settings">
-            <img className="topImg" src={PF+user.profilePic} alt="" />
+            <img className="topImg" src={PF + user.profilePic} alt="" />
           </Link>
         ) : (
           <ul className="topList">
@@ -64,7 +64,12 @@ export default function TopBar() {
             </li>
           </ul>
         )}
-        <i className="topSearchIcon fas fa-search"></i>
+
+        <div>
+          <Link to="/search">
+            <i className="topSearchIcon fas fa-search"></i>
+          </Link>
+        </div>
       </div>
     </div>
   );
