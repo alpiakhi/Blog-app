@@ -52,7 +52,7 @@ export default function SearchPage() {
                     !posts.length ? 
                         (
                             <>
-                                <h3>Loading..</h3>
+                                <h3 style={{textAlign: 'center', marginTop: '20px'}}>Loading..</h3>
                             </>
                         ):
                         (
